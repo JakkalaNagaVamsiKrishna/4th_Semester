@@ -2,8 +2,9 @@
 
 ## Course Websites
 
-[Kgpellence](https://drive.google.com/drive/folders/1p4wkwEWC2KNC5AlgSHUm784jpvCbXiCB)
+[Moodle](https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=119#section-0)
 
+[Kgpellence](https://drive.google.com/drive/folders/1p4wkwEWC2KNC5AlgSHUm784jpvCbXiCB)
 
 ## Course Timings
 
