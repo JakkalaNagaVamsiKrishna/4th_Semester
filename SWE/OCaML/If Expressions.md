@@ -13,5 +13,5 @@ Syntax :
 Evaluation          -- here Evaluates to is denoted by ==> 
 - if e1 ==> true, and if e2 ==> v, then `if e1 then e2 else e3` ==> v.
 - if e1 ==> false, and if e3 ==> v, then `if e1 then e2 else e3` ==> v.
-Type Checking :    -- her instead of "has type" we use a colon
+Type Checking :    -- here instead of "has type" we use a colon
 	if e1 : bool and e2 : t and e3 : t then `if e1 then e2 else e3` : t .

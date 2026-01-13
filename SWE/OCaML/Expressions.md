@@ -8,7 +8,7 @@ every expression has :
 
 ```Ocaml
 3110;;
-" output  (- : int = 3110)"
+(*output  (- : int = 3110)*)
 ```
 
 the output is read from right to left, 3110 is our value, int is our type.

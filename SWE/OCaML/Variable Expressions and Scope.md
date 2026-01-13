@@ -28,4 +28,8 @@ It's confusing so we should not use this because it's not easily readable.
 To ensure name irrelevance in programs, stop substituting when you reach a binding of the same name.
 
 
+# Scope and Top level
+- this contradicts the statement that variables in ocaml are immutable. 
+we can see the consecutive lines as in nested scopes.
 
+- Every time we redefine a variable which already exist, that means we are creating a new variable in the inner scope.
