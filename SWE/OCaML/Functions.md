@@ -4,7 +4,7 @@
 
 ```ocaml
 (fun x->x+1);;
-- : int -> int = <fun> here fun is an unprintable value.
+- : int -> int = <fun> (*here fun is an unprintable value.*)
 ```
 
 To call a function :
