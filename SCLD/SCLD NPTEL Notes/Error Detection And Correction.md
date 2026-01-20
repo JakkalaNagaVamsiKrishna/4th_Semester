@@ -23,3 +23,24 @@ EX. distance between codewords 01001 and 11100 is 3.
 	- The parity check bits are assigned position numbers that are of powers of 2.
 	- Parity check bits are computed based on some well defined formula.
 
+|     | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| p3  | 0   | 0   | 0   | 1   | 1   | 1   | 1   |
+| p2  | 0   | 1   | 1   | 0   | 0   | 1   | 1   |
+| p1  | 1   | 0   | 1   | 0   | 1   | 0   | 1   |
+$$p_{1} = m_{1} \oplus m_{2} \oplus m_{4} $$
+$$p_{2} = m_{1} \oplus m_{3} \oplus m_{4} $$
+$$p_{3} = m_{2} \oplus m_{3} \oplus m_{4} $$
+## How to correct errors ?
+
+- calculate the three check bits
+	- $c_{1} = b_{1} \oplus b_{3} \oplus b_{5} \oplus b_{7}$
+	- $c_{2} = b_{2} \oplus b_{3} \oplus b_{6} \oplus b_{7}$
+	- $c_{3} = b_{4} \oplus b_{5} \oplus b_{6} \oplus b_{7}$
+- if $c_{3} c_{2} c_{1}$ = 000, there is no error.
+- Else, the bit position is given by $c_{3} c_{2} c_{1}$
+
+
+## Design a hamming code for m = 5
+
+
