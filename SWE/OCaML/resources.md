@@ -7,5 +7,7 @@
 
 [Ocaml Pro](https://try.ocamlpro.com/)
 
+[Exercise](https://ocaml.org/exercises)
+
 
 
