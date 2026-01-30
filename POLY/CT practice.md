@@ -73,7 +73,55 @@ CoPolymer - more than one monomer
 
 `Glass transition temperature of Blends :`
 $-(A)_{x} - (B)_{y}-$     $$\frac{1}{T_{g}} = \frac {W_{A}}{T_{gA}} + \frac {W_{B}}{T_{gB}}$$
+`About entanglement :`
+- When the polymer is melted, the chains can flow past each other.
+- Below melting point, the chains can move but only slowly. Thus plastic is flexible but cannot be easily stretched.
+- Below the glass transition point, the chains become locked and polymer is rigid.
+`Intermolecular Forces :`
+- If the chains happen to be straight and stiff and all lined up next to each other, it can be REALLY hard to pull them apart. EX. Cellulose in Wood. 
+`Time Scale of Motion :`
+- Polymers have long chains and move slowly so when dissolved they make the solution move slower.
+- The longer it takes to flow, the more viscous it it, *Polymer enhances the viscosity of the medium.*
 
+
+# Classification of Polymers 
+## 1.Based on the source 
+
+`Natural Polymers :` obtained from nature 
+Ex : Starch, cellulose, Natural rubbers, proteins, Nucleic acid(DNA, RNA), cotton, silk, wool.
+`Synthetic Polymers :` prep in laboratories. 
+Ex : Polyethylene, Polyvinylchloride (pvc), Nylon, Teflon, Bakelite, Terylene.
+
+## 2.Based on structure
+
+`Linear Polymer :` monomeric units form linear chain 
+Ex : Polyethylene (HDPE), Nylon, Polyester 
+`Branched chain polymer :` monomeric units joined to form long chains with side chains or branches of diff length 
+Ex : Glycogen, Starch, LDPE 
+`Cross-linked Polymer :` monomer units are cross linked to form a 3-D network
+Ex : Bakelite, melamine-formaldehyde resin, Polystyrene-Butadiene.
+
+## 3.Based on molecular forces
+
+`Thermoplastic :` soften on heating and harden on cooling reversibly.
+Polymers which can be melted can be molded into any shape using processing techniques like injection, molding or extrusion.
+Ex : Polyethylene, polystyrene, PVC, Teflon, Nylon, sealing wax.
+`Thermosetting :` undergo permanent change on heating (irreversible).
+Network Polymers in which chain motion is greatly restricted by a high degree of crosslinking.
+Ex : Bakelite, Polyester, Polysilloxanes.
+`Elastomers :`possess elastic character.
+low degree crosslinked rubbery polymer that can be easily stretched and rapidly recover.
+Ex : Natural Rubber.
+`Fibers :` chain held by intermol forces like H-bond, Dipole-Dipole interaction.
+Ex : Nylon, polyacrylonitrile.
+
+## 4.Based on Mode of Synthesis
+
+`Addition Polymers :` Direct addition of repeated monomer without elimination of by-products. 
+Ex : polyethylene, polypropylene, pvc, Teflon, Orlun, Neoprene, Polyvinyl pyrolidone (PVP).
+`Condensation Polymers :` formed by condensation of two or more monomers with elimination of simple molecule like $H_{2}O, NH_{3}, HCl, alcohol$ .
+Ex : Polyester, Nylon 6, 6, Bakelite, Polycarbonate.
+`Ring Opening Polymers :` Monomers in the form of ring breaks and connetc swith another monomer.
 
 
 
