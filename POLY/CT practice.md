@@ -11,8 +11,11 @@
 - `Repeat Unit :` The smallest structural segment of a polymer chain whose repetition builds the entire polymer.
 - Ex : 
 	- Nylon - 6, 6 : Hexamethylene diamine, adipic acid
-	- `Structure units :`   $-NH-(CH_{2})_{6}-NH-$  ,  $-CO-(CH_{2})_{4}-CO-$   
-	- `Repeat units :`   $[-NH-(CH_{2})_{6}-NH-CO-(CH_{2})_{4}-CO-]_{n}$  
+	- `Structure units :` 
+	-   $-NH-(CH_{2})_{6}-NH-$  
+	-   $-CO-(CH_{2})_{4}-CO-$   
+	- `Repeat units :` 
+	-   $[-NH-(CH_{2})_{6}-NH-CO-(CH_{2})_{4}-CO-]_{n}$  
 
 
 
