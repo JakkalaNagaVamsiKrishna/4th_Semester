@@ -55,7 +55,8 @@ CoPolymer - more than one monomer
 - Mixing two or more polymers together to produce blends is economically more attractive than copolymerization from the standpoint of comm. appl.
 - Blends : 1. Miscible 2. Partially miscible 3. Immiscible
 
-`Glass Transition Temperature :` The temp at which an amorphous polymer (regions) changes from **Hard, glassy, brittle $\to$ soft, rubbery, flexible**
+`Glass Transition Temperature :` The temp at which an amorphous polymer (regions) changes from 
+**Hard, glassy, brittle $\to$ soft, rubbery, flexible**
 
 - Poly chains do not break
 - Chain segments start to move 
@@ -64,7 +65,8 @@ CoPolymer - more than one monomer
 - aff by : chain flexibility, molecular weight, plasticizers, cross-linking.
 - PS has high $T_{g}$ $\to$ rigid at room temperature 
 
-`Melting Temperature :` The temp at which crystalline regions of a polymer melt and polymer changes from **solid $\to$ viscous liquid**
+`Melting Temperature :` The temp at which crystalline regions of a polymer melt and polymer changes from 
+**solid $\to$ viscous liquid**
 
 - intermolecular forces break
 - Ordered crystalline structure collapses . more ordered $\to$ higher $T_{m}$ 
