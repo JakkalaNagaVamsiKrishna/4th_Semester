@@ -15,8 +15,7 @@
 	-   $-NH-(CH_{2})_{6}-NH-$  
 	-   $-CO-(CH_{2})_{4}-CO-$   
 	- `Repeat units :` 
-	-   $[-NH-(CH_{2})_{6}-NH-CO-(CH_{2})_{4}-CO-]_{n}$  
-
+	-    $[-NH-(CH_{2})_{6}-NH-CO-(CH_{2})_{4}-CO-]_{n}$   
 
 
 - `Degree of polymerisation :` The number of repeating monomer units in a single polymer molecule (chain).
