@@ -33,11 +33,13 @@ mix of differently sized molecules so, only average molecular weight can be defi
 	- Weight average M.W ($M_{w}$) : Weighted average.
 	- Viscosity average M.W ($M_{v}$) : average determined by viscosity measurements 
 	- $$M_{w} ---- M_{v} -- M_{n}$$
-`Number Average molecular Weight :`
-This gives us the true average weight.
+
+`Number Average molecular Weight :` This gives us the true average weight.
+
 $$M_{n} = \frac{\sum n_{i}M_{i}}{\sum n_{i}}  $$
-`Weight Average Molecular weight :`
-Since most of the polymer mass is in heavier fractions, this gives the average molecular weight of the most abundant polymer fraction by mass.
+
+`Weight Average Molecular weight :`Since most of the polymer mass is in heavier fractions, this gives the average molecular weight of the most abundant polymer fraction by mass.
+
 $$M_{w} = \frac {\sum n_{i} M_{i}^n}{\sum n_{i} M_{i}}$$
 
 ## CoPolymers 
