@@ -143,3 +143,114 @@ Ex : Polyester, Nylon 6, 6, Bakelite, Polycarbonate.
 
 
 
+# polymer synthesis :
+
+`Addition Polymerization :`
+
+the polymer grows by sequential addition of monomers to a reactive site
+
+- chain growth is linear
+
+- max mol wt is obtained early in the reaction
+
+`Step growth polymerization :`
+
+Monomers react together to make small oligomers. small oligomers make bigger ones, and big oligomers react to give polymers
+
+- chain growth is exponential
+
+- max mol wt is obtained late in the reaction
+
+`PolyAddition :`
+
+reactions in which monomers combine without the elimination of a small molecule
+usually involves the breakage of a double bond
+
+  
+  
+
+`Poly Addition with radicals :`
+
+initiation : creation of an active site(free radical)
+
+Propogation : growth of polymer chain by addition of a monomer to an active site and the creation of a new active site.
+
+termination : two growing chains collide.
+
+Disproportionation : A hydrogen atom is added to the end of a growing chain.
+
+  
+
+$$MW \propto \frac{K_{propogation}}{K_{termination}}$$
+
+  
+
+`Types of Addition Polymerizations :`
+
+`Anionic :`
+
+$$C_3 H_7 - CH_2 - Li + styrene $$
+
+`Radical :`
+
+$$PhCO_2^{.} + styrene $$
+
+`Cationic :`
+
+$$Cl_3 Al^{-} - O^{+}H_2 + styrene $$
+
+  
+
+Common Polyolefins : polypropylene, polysteyrene, poly(tetrafloroethylene)-Teflon
+
+  
+
+`PolyCondensation :`
+
+Reactions in which small molecules($H_2O, HCl$) are eliminated when the monomers combine.
+// checkout the two examples
+
+  
+
+`Step-Growth Polymerization :`
+
+Stage1 : Consumption of monomer
+Stage2 : Combination of small fragments
+Stage3 : Reaction of oligomers to give high molecular weight polymer
+$$ r = \frac{N_A}{N_B} , p = mole\  fraction\ monomer\ conversion\ , DP = Degree\ of \ polymerization $$
+
+$$ DP = \frac{1+r}{1+r-2p}$$
+
+If there is no stoichiometric imbalance : $N_A = N_B$ :
+
+$$ DP = \frac{1}{1-p}$$
+
+If p = 1 :
+
+$$ DP = \frac{1+r}{1-r}$$
+
+  
+
+`Nylon-6, 6 :`
+
+The reactants are in different phases, they can only react at phase boundary . Once a layer of polymer forms, no more reaction occurs. Removing the polymer allows more reaction to occur.
+
+Adipoyl chloride in hexane -> aqueous layer.
+Nylon - 6, 6 -> polymer layer.
+Diamine, NaOH in $H_{2}O$   -> organic layer.
+
+`Polyesters, Amides, Urethanes :`
+
+
+
+# Physical Properties :
+
+`Linear Polymer : ` The chains can be stretched, which causes them to flow past each other. when released, the polymer will not return to its original form 
+`Cross-linked Polymer :` The cross-links hold the chains together. when released, the polymer will return to its original form.
+
+`Elastic :` reversible (linear and non-linear deformation).
+`Plastic :` irreversible (deformation is permanent).
+
+`Tensile Strength as function of mol wt :` 
+At high molecular weight, the strength increases eventually saturating to infinite mol weight result of $S_{\infty}$ . 
+$$S = S_{\infty} - \frac{A}{M}$$ 
