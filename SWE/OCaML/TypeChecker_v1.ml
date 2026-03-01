@@ -1,4 +1,3 @@
-
 (*Type checker using inference rules *)
 
 (*Grammar*)
