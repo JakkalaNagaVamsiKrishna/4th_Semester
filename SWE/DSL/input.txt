@@ -1,0 +1,8 @@
+add 2 3
+set x 5
+set y 4 
+add x y
+set z add x y 
+z 
+# This is a comment 
+42 

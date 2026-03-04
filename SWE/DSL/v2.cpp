@@ -108,7 +108,7 @@ void run_nested_dsl(const std::string& input){
 
     Parser p(tokens);
     auto root = p.parse();
-    std::cout << "AST Result: " << root->evaluate() << std::endl;
+    std::cout << input << ": " << root->evaluate() << std::endl;
 }
 
 
@@ -126,7 +126,7 @@ int main(int argc, char* argv[]){
     //MODE 1: Script File Execution 
     if(argc > 1){
         std::ifstream file(argv[1]);
-        if(file.is_open()){
+        if(!file.is_open()){
             std::cerr << "could not open " << argv[1] << std::endl; 
             return 1;
         }
