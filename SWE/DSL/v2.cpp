@@ -4,6 +4,7 @@
 #include <vector> 
 #include <iostream> 
 #include <sstream>
+#include <fstream> 
 
 // Global memory for our DSL 
 std::map<std::string, int> symbolTable;
@@ -110,13 +111,40 @@ void run_nested_dsl(const std::string& input){
     std::cout << "AST Result: " << root->evaluate() << std::endl;
 }
 
-int main(){
-    //Input: "add 10 mult 2 3" translates to 10 + (2*3) 
-    std::string code = "mult 10 mult 2 3";
-    std::cout <<"Executing: " << code << std::endl;
-    run_nested_dsl(code);
-    run_nested_dsl("set x 5");
-    run_nested_dsl("mult x x");
-    run_nested_dsl("x");
+
+//function to process each line of an external file
+void process_line(std::string line){
+    if(line.empty() || line[0] == '#') return;
+    try{
+        run_nested_dsl(line);
+    }catch (const std::exception& e){
+        std::cerr << "Runtime Error: " << e.what() << std::endl;
+    }
+}
+
+int main(int argc, char* argv[]){
+    //MODE 1: Script File Execution 
+    if(argc > 1){
+        std::ifstream file(argv[1]);
+        if(file.is_open()){
+            std::cerr << "could not open " << argv[1] << std::endl; 
+            return 1;
+        }
+        std::string line;
+        while(std::getline(file, line)){
+            process_line(line);
+        }
+    }
+
+    //MODE 2: Interactive REPL 
+    else{
+        std::cout << "DSL Interactive Shell (type 'exit' to quit)" << std::endl;
+        std::string line;
+        while(true){
+            std::cout << ">>> "; //classic REPL prompt 
+            if(!std::getline(std::cin, line) || line == "exit") break;
+            process_line(line);
+        }
+    }
     return 0;
 }
