@@ -74,12 +74,24 @@ public:
     std::unique_ptr<Node> parse(){
         const std::string& token = tokens[pos++];
 
+        if(token == "set"){
+            std::string varName = tokens[pos++];
+
+            auto value = parse();
+            return std::make_unique<AssignNode>(varName, std::move(value));
+        }
+
         if(token == "add" || token == "mult"){
             auto left = parse();
             auto right = parse();
             return std::make_unique<OpNode>(token, std::move(left), std::move(right));
-        }else{
+        }
+        
+        
+        if(isdigit(token[0])){
             return std::make_unique<NumberNode>(std::stoi(token));
+        }else{
+            return std::make_unique<VariableNode>(token);
         }
     }
 };
@@ -103,5 +115,8 @@ int main(){
     std::string code = "mult 10 mult 2 3";
     std::cout <<"Executing: " << code << std::endl;
     run_nested_dsl(code);
+    run_nested_dsl("set x 5");
+    run_nested_dsl("mult x x");
+    run_nested_dsl("x");
     return 0;
 }
