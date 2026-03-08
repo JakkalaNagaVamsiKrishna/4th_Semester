@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/my-dsl/META"
+  "_build/install/default/lib/my-dsl/dune-package"
+  "_build/install/default/lib/my-dsl/opam"
+]
+bin: [
+  "_build/install/default/bin/my-dsl"
+]
