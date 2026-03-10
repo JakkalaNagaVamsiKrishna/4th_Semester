@@ -25,9 +25,38 @@ let precedence = function
   | LESS | MORE -> 1 
   | _ -> 0;;  
 
+(* Parses primary expressions (literals and variables) *)
+let rec parse_primary = function
+  | h :: t when h.kind = INT -> Int(int_of_string h.lit_val), t
+  | h :: t when h.kind = STR -> Str(h.lit_val), t
+  | h :: t when h.kind = IDF -> Var(h.text), t
+  | h :: t when h.kind = TOKKOR -> 
+      (match t with 
+       | s1 :: s2 :: tail -> Tokkor(s1.lit_val, s2.lit_val), tail
+       | _ -> failwith "Tokkor expects two strings")
+  | _ -> failwith "Expected expression"
+
+(* Handles binary operations like x + 5 or a < 10 *)
+and parse_expr tokens =
+  let (lhs, t1) = parse_primary tokens in
+  parse_binary_rhs 0 lhs t1
+
+and parse_binary_rhs min_prec lhs tokens =
+  match tokens with
+  | h :: t when precedence h.kind >= min_prec ->
+      let op = h.kind in
+      let (rhs_primary, t2) = parse_primary t in
+      let (rhs, t3) = 
+        match t2 with
+        | h_next :: _ when precedence h_next.kind > precedence op ->
+            parse_binary_rhs (precedence op + 1) rhs_primary t2
+        | _ -> rhs_primary, t2
+      in
+      parse_binary_rhs min_prec (Binary(lhs, op, rhs)) t3
+  | _ -> lhs, tokens
 
 (* Helper to parse a single expression (Int, Str, Var, or Tokkor) *)
-let parse_expr tokens =
+(*let parse_expr tokens =
   match tokens with
   | h :: t when h.kind = INT -> Int (int_of_string h.lit_val), t 
   | h :: t when h.kind = STR -> Str h.lit_val, t 
@@ -36,7 +65,7 @@ let parse_expr tokens =
       (match t with
        | s1 :: s2 :: tail -> Tokkor (s1.lit_val, s2.lit_val), tail 
        | _ -> failwith "Tokkor expects two strings")
-  | _ -> failwith "Invalid Expression"
+  | _ -> failwith "Invalid Expression"*)
 
 (* Main recursive parser: returns (parsed statements * remaining tokens) *)
 let rec parser_help acc l =
