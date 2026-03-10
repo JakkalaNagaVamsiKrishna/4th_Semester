@@ -30,7 +30,7 @@ let tests =
         let input = [] in
         let expected_output = "" in
         let actual_output = implode input in
-        assert_equal expected_output actual_output ); *)
+        assert_equal expected_output actual_output ); *)   (*Avoiding refactoring implode function as it has no usage right now*)
         ( "tokenize empty string" >:: fun _ ->
           let input = "" in
           let expected_output = [{kind = END; text = ""; lit_val = "null"}] in 

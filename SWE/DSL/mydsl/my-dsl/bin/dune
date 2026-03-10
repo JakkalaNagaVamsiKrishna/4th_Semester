@@ -1,4 +1,4 @@
 (executable
- (public_name my-dsl)
  (name main)
+ (public_name my_project_executable)
  (libraries my_dsl))
