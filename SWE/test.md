@@ -15,7 +15,7 @@ main(){
   asset.stock("AAPL",50,175.0),
   asset.stock("GOOGL",30,2800.0)]);
   rebalance_portfolio(myPortfolio);
-  print("Final Portfolio Value: ",           myPortfolio.curr_value());
+  print("Final Portfolio Value: ", myPortfolio.curr_value());
   return 0;
 }
 ```
